@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+      integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+      <nav>
+        <h1><img src="assets/logo-JM.png" alt="logo JM"></h1>
+        <input type="checkbox" id="toggler"" />
+        <label for="toggler"><img src="assets/desplegable.png" alt="" /></label>
+        <!-- Ícono de menú desplegable -->
+        <div class="menu">
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="presentation">
+      <div class="container__principal">
+        <div class="presentation__you">
+          <h2>Desarrollador <span>Full Stack</span></h2>
+          <p>
+            Me presento, soy Jeremias Monserrat desarrollador Full Stack,
+            especializado en Front End, con mi trabajo llevas tu negocio/marca a
+            lo alto de la red.
+          </p>
+        </div>
+        <div class="presentation__img">
+          <img src="./assets/YO.jpeg" alt="Foto personal" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tecnologia">
+      <div class="tecnologias">
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/css.png" alt="foto de css" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/html.png" alt="foto de html" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/Javascript.png" alt="foto de javascript" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/node.png" alt="foto de node" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/react.png" alt="foto de react" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/tailwind.png" alt="foto de tailwind" />
+          </div>
+        </div>
+        <div class="container__tecnologias">
+          <div class="content">
+            <img src="./assets/wordpress.png" alt="foto de wordpress" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-slider">
+      <div class="slider-container">
+        <div class="slide">
+          <a href="https://ufc-2.netlify.app/">
+            <img src="./assets/proyecto1.png" alt="Proyecto 1" />
+          </a>
+          <h3>Pagina del Union Futbol Club</h3>
+          <p>
+            Este proyecto fue realizado como proyecto de la facultad, esta
+            publicada y las tecnologias que utilice fueron, HTML, CSS,
+            JAVASCRIPT
+          </p>
+        </div>
+        <div class="slide">
+          <a href="https://www.youtube.com"
+            ><img src="./assets/css.png" alt="Proyecto 2"
+          /></a>
+          <h3>Proyecto 2</h3>
+          <p>
+            Descripción del Proyecto 2 Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+        </div>
+        <!-- Agrega más slides según sea necesario -->
+
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="about-me">
+      <div class="about-gral">
+        <div class="explicacion">
+          <h3>Quién soy?</h3>
+          <p>
+            Mi nombre es Jeremias. De Totoras, Santa Fe, Argentina, tengo
+            <b>20 años</b> y soy un apasionado del mundo TI.
+          </p>
+          <p>
+            Mi pasión por esto comenzo a finales del 2021 y decidi aprender a
+            travez de youtube y diferentes plataformas, principios del 2022
+            empece con cursos y acutalmente estoy en segundo año de la carrera
+            <b>Tecnico superior en desarrollo de software</b>.
+          </p>
+          <p>
+            Aprendi muchisimo siendo autodidacta, ya que estudiaba muy bien el
+            desarrollo web que es lo que más me apasiona
+          </p>
+        </div>
+        <div class="explicacion">
+          <h3>Que hago?</h3>
+          <p>
+            Soy capaz de desarrollar páginas web a nivel profesional y a tu
+            gusto
+          </p>
+          <p>
+            No manejo muchas tecnologias porque preferi profundizar las que se.
+            Las tecnologias que manejo son <b>HTML</b>,<b>CSS/SASS/TAILWIND</b>,
+            <b>JAVASCRIPT</b>, <b>REACT</b>, <b>NODE.JS</b>
+          </p>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact-me">
+        <div class="container-contact">
+          <h2>Contacto</h2>
+          <h3>¡Me encantaría escuchar de ti! Si tienes alguna pregunta, consulta o simplemente quieres ponerte en contacto
+          conmigo, aquí tienes varias formas de hacerlo</h3>
+          <a href="mailto:monserratjere@gmail.com">
+            <p><b>Empecemos por <br>
+              </b> <span>monserratjere@gmail.com</span> </p>
+          </a>
+          <div class="iconos">
+            <a href="#"><i>Linkedin</i></a>
+            <a href="#"><i >instagram</i></a>
+            <a href="#"><i>Github</i></a>
+          </div>  
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
+      integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

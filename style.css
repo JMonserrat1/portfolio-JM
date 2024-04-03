@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(242, 249, 255)
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 15px;
+    margin-top: -2%;
+    background-color: rgb(242, 249, 255)
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+nav a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    /* Ajusta el tamaño de la línea según sea necesario */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Ajusta el grosor de la línea según sea necesario */
+    background-color: #0f6b0f;
+    /* Cambia el color de la línea según tu preferencia */
+}
+
+nav h1 {
+    color: rgb(15, 107, 15);
+}
+
+nav h1 img {
+    width: 100px;
+    height: 100px;
+}
+
+nav h1 img:hover {
+    scale: 1.1;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+#toggler,
+label {
+    display: none;
+}
+
+label i {
+    color: black;
+}
+
+label img {
+    height: 36px;
+    width: 36px;
+}
+
+@media screen and (max-width: 770px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    label {
+        display: inline-flex;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        transition: all;
+    }
+
+    .presentation__img img {
+        margin-left: 30%;
+    }
+}
+
+/*SECTION principal*/
+
+
+.presentation {
+    margin-top: -10%;
+    background-color: rgb(242, 249, 255);
+}
+
+.container__principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Centra los elementos horizontalmente */
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    gap: 50px;
+}
+
+.presentation__img {
+    margin-top: 2%;
+    margin-right: -2%;
+    flex: 0 0 40%;
+    /* Establece un ancho inicial del 40% */
+}
+
+.presentation__img img {
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.presentation__you {
+    margin-left: 8%;
+    margin-top: 2%;
+    flex: 0 0 40%;
+    /* Establece un ancho inicial del 40% */
+}
+
+.presentation__you h2 {
+    font-size: 3em;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}
+
+.presentation__you span {
+    color: rgb(15, 107, 15);
+}
+
+.presentation__you p {
+    width: 100%;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
+/*SECTION DE TECNOLOGIAS*/
+
+.section-tecnologia {
+    background-color: #6e6c6c;
+    margin-bottom: 20px;
+    /* Espacio debajo de la sección de tecnología */
+}
+
+.tecnologias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.container__tecnologias {
+    padding: 0;
+    /* Eliminar el relleno para evitar superposición con el padding de .tecnologias */
+    background-color: #f0f0f0;
+    /* Cambiar el color de fondo para que coincida con el contenedor */
+    display: flex;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agregar una sombra sutil */
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+}
+
+.container__tecnologias img {
+    width: 130px;
+    height: 130px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra con desplazamiento horizontal de 0, desplazamiento vertical de 4px y desenfoque de 8px */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    /* Transición suave de 0.3 segundos */
+}
+
+.container__tecnologias img:hover {
+    transform: scale(1.1);
+    /* Escalar la imagen al 110% en el hover */
+}
+
+.content {
+    padding: 40px;
+}
+
+/*SLIDER SECTION*/
+.section-slider {
+    margin-top: auto;
+    /* El slider estará al final de la página */
+    margin-bottom: 2%;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Aquí aplicamos la sombra */
+    margin-top: 5%;
+    background-color: #c9c7c7;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    /* Para centrar el contenido */
+}
+
+.slide img {
+    max-width: 100%;
+    /* Para asegurarse de que la imagen no sea más grande que su contenedor */
+    max-height: 200px;
+    /* Altura máxima deseada */
+    display: block;
+    /* Esto elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto;
+    /* Esto centra la imagen horizontalmente */
+    margin-top: 2%;
+}
+
+.slide img:hover {
+    scale: 1.1;
+    transition: all;
+}
+
+.slide h3,
+.slide p {
+    margin: 10px 0;
+    /* Ajusta el espaciado alrededor del texto */
+}
+
+.slide p {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    z-index: 100;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*SOBRE MI*/
+.about-gral {
+    background-color: rgb(242, 249, 255);
+    display: flex;
+    gap: 5%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.about-gral .explicacion {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.explicacion h3 {
+    margin-bottom: 15px;
+    font-size: 50px;
+    color: rgb(15, 107, 15);
+}
+
+.explicacion p {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/*SECTION DE CONTACT*/
+/*SECTION DE CONTACT*/
+.contact {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-contact h2 {
+    font-size: 36px;
+    color: rgb(15, 107, 15);
+    margin-bottom: 20px;
+}
+
+.container-contact h3 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.container-contact a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(15, 107, 15);
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.container-contact span {
+    color: black;
+}
+
+.iconos a {
+    text-decoration: none;
+    position: relative;
+}
+
+.iconos a:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    /* Ajusta el tamaño de la línea según sea necesario */
+    left: 0;
+    width: 100%;
+    height: 2px;
+    /* Ajusta el grosor de la línea según sea necesario */
+    background-color: rgb(15, 107, 15);
+    /* Cambia el color de la línea según tu preferencia */
+}
+
+.container-contact a:hover {
+    color: #007bff;
+}
+
+.iconos {
+    margin-top: 30px;
+}
+
+.iconos a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.iconos a:hover {
+    color: #007bff;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        background-color: gray;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header h1,
+    header nav ul {
+        margin-top: 1em;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 0 2%;
+        /* Añade espacio horizontal entre elementos del menú */
+    }
+
+    .presentation__you p {
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .presentation__img,
+    .presentation__you {
+        margin: 5% 0;
+        flex: 0 0 100%;
+        /* Establece un ancho del 100% en pantallas pequeñas */
+    }
+
+    .presentation__you h2 {
+        margin-left: 10%;
+    }
+
+    .container__principal {
+        margin: 0;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .presentation__img img {
+        margin-left: 15%;
+    }
+
+    .tecnologias {
+        gap: 20px;
+        margin-top: 2%;
+    }
+
+    .container__tecnologias {
+        padding: 0;
+    }
+
+    .container__tecnologias img {
+        max-width: 150px;
+    }
+
+    .section-slider {
+        order: 3;
+        /* Cambia el orden del slider para que aparezca al final en dispositivos móviles */
+    }
+
+    .tecnologias {
+        height: auto;
+        /* Altura automática para la sección de tecnologías */
+    }
+
+    .section-slider {
+        margin-top: 20px;
+        /* Espacio superior para la sección del slider */
+    }
+
+    .slider-container {
+        margin: 0 auto;
+        /* Centrar el contenedor del slider */
+        max-width: 90%;
+        /* Ancho máximo del slider */
+    }
+
+    .slide img {
+        width: 100%;
+        /* Ajustar el ancho de la imagen al contenedor del slide */
+        max-width: 100%;
+        /* Asegurarse de que la imagen no sea más ancha que su contenedor */
+        height: auto;
+        /* Permitir que la altura de la imagen se ajuste automáticamente */
+    }
+
+    .slide h3,
+    .slide p {
+        text-align: center;
+        /* Centrar el texto */
+    }
+
+    .prev,
+    .next {
+        top: 45%;
+        /* Alinear los botones de navegación verticalmente en el centro */
+    }
+
+    .about-gral {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .presentation__img img {
+        margin-left: 8%;
+    }
+
+}
