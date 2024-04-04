@@ -5,7 +5,8 @@
 }
 
 body {
-    background-color: rgb(242, 249, 255)
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
 }
 
 nav {
@@ -14,7 +15,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500px;
     font-family: sans-serif;
     padding: 15px;
     margin-top: -2%;
@@ -141,9 +142,9 @@ label img {
 }
 
 .presentation__you h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bolder;
-    margin-bottom: 2%;
+    margin-bottom: 1em;
 }
 
 .presentation__you span {
@@ -152,8 +153,9 @@ label img {
 
 .presentation__you p {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1.2em;
     justify-content: center;
+    margin-bottom: 1.5em;
 }
 
 /*SECTION DE TECNOLOGIAS*/
@@ -207,7 +209,7 @@ label img {
 }
 
 .content {
-    padding: 40px;
+    padding: 20px;
 }
 
 /*SLIDER SECTION*/
@@ -225,7 +227,7 @@ label img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     /* Aquí aplicamos la sombra */
     margin-top: 5%;
-    background-color: #c9c7c7;
+    background-color: #f3f3f3;
 }
 
 .slide {
@@ -244,6 +246,7 @@ label img {
     margin: 0 auto;
     /* Esto centra la imagen horizontalmente */
     margin-top: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .slide img:hover {
@@ -310,7 +313,7 @@ button {
 /*SECTION DE CONTACT*/
 /*SECTION DE CONTACT*/
 .contact {
-    background-color: #f9f9f9;
+    background-color: #f5f4f4;
     padding: 50px 0;
 }
 
@@ -384,6 +387,32 @@ button {
     color: #007bff;
 }
 
+.container__tecnologias img,
+.slide img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Agregar transiciones suaves */
+}
+
+.container__tecnologias img:hover,
+.slide img:hover {
+    transform: scale(1.02);
+    /* Escalar ligeramente al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra más suave */
+}
+
+/*FOOTER */
+footer {
+    width: 100%;
+    padding: 20px;
+}
+
+
+footer p {
+    text-align: center;
+    color: black;
+}
+
 
 @media screen and (max-width: 768px) {
     header {
@@ -427,9 +456,8 @@ button {
     }
 
     .container__principal {
-        margin: 0;
-        margin-top: 5%;
-        margin-right: 5%;
+        margin: 5% auto;
+
     }
 
     .presentation__img img {
@@ -437,7 +465,7 @@ button {
     }
 
     .tecnologias {
-        gap: 20px;
+        gap: 25px;
         margin-top: 2%;
     }
 

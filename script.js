@@ -36,6 +36,6 @@ document.querySelector(".menu-toggle").addEventListener("click", function () {
 });
 
 document.querySelector(".menu-toggle").addEventListener("click", function () {
-    const menu = document.querySelector("header nav ul");
-    menu.classList.toggle("menu-open");
+  const menu = document.querySelector("header nav ul");
+  menu.classList.toggle("menu-open");
 });
