@@ -333,6 +333,8 @@ button {
 .container-contact h3 {
     font-size: 18px;
     color: #666;
+    width: 90%;
+    margin-left: 5%;
     margin-bottom: 30px;
 }
 
