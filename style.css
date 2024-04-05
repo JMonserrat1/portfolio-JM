@@ -296,6 +296,7 @@ button {
 
 .about-gral .explicacion {
     margin-left: 5%;
+    width: 70%;
     margin-right: 5%;
 }
 
@@ -441,7 +442,7 @@ footer p {
 
     .presentation__you p {
         width: 90%;
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .presentation__img,
@@ -461,7 +462,7 @@ footer p {
     }
 
     .presentation__img img {
-        margin-left: 15%;
+        margin-left: 10%;
     }
 
     .tecnologias {
@@ -488,8 +489,9 @@ footer p {
     }
 
     .section-slider {
-        margin-top: 20px;
+        margin-top: 15%;
         /* Espacio superior para la sección del slider */
+        margin-bottom: 15%;
     }
 
     .slider-container {
@@ -522,6 +524,11 @@ footer p {
 
     .about-gral {
         flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .about-gral .explicacion{
+        width: 100%;
     }
 }
 
