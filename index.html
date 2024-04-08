@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
     integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,7 +17,7 @@
   <nav>
     <h1><img src="assets/logo-JM.png" alt="logo JM"></h1>
     <input type="checkbox" id="toggler" />
-    <label for="toggler"><img src="assets/desplegable.png" alt="" /></label>
+    <label for="toggler"><img id="imagen" src="assets/desplegable.png" alt="" onclick="menuX()" /></label>
     <!-- Ícono de menú desplegable -->
     <div class="menu">
       <ul class="list">
@@ -29,7 +30,7 @@
   </nav>
 
   <section class="presentation" id="presentation">
-    <div class="container__principal">
+    <div class="container__principal" >
       <div class="presentation__you">
         <h2>Desarrollador <br>
           <span>Full Stack</span>
@@ -47,42 +48,42 @@
 
   <section class="section-tecnologia">
     <div class="tecnologias">
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-right">
         <div class="content">
           <img src="./assets/css.png" alt="foto de css" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-right">
         <div class="content">
           <img src="./assets/html.png" alt="foto de html" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-up">
         <div class="content">
           <img src="./assets/Javascript.png" alt="foto de javascript" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-left">
         <div class="content">
           <img src="./assets/node.png" alt="foto de node" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias"data-aos="fade-left">
         <div class="content">
           <img src="./assets/react.png" alt="foto de react" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-left">
         <div class="content">
           <img src="./assets/tailwind.png" alt="foto de tailwind" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-down">
         <div class="content">
           <img src="./assets/python.png" alt="foto de Python" />
         </div>
       </div>
-      <div class="container__tecnologias">
+      <div class="container__tecnologias" data-aos="fade-right">
         <div class="content">
           <img src="./assets/wordpress.png" alt="foto de wordpress" />
         </div>
@@ -138,7 +139,7 @@
 
   <section class="about-me" id="about-me">
     <div class="about-gral">
-      <div class="explicacion">
+      <div class="explicacion" data-aos="zoom-in-down">
         <h3>Quién soy?</h3>
         <p>
           ¡Hola! Soy Jeremías, oriundo de Totoras, Santa Fe, Argentina. Con apenas <b>20 años</b>, mi pasión por el
@@ -157,7 +158,7 @@
         </p>
 
       </div>
-      <div class="explicacion">
+      <div class="explicacion" data-aos="zoom-in-down" >
         <h3>Que hago?</h3>
         <p>
           Como desarrollador web profesional, mi compromiso es crear experiencias digitales excepcionales que superen
@@ -207,6 +208,10 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js"
     integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
