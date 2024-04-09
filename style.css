@@ -121,11 +121,13 @@ label img {
 }
 
 .presentation__img {
+    display: flex;
     margin-top: 2%;
     margin-right: -2%;
     flex: 0 0 40%;
-    /* Establece un ancho inicial del 40% */
+    /* Establece un ancho inicial del 40% */    
 }
+
 
 .presentation__img img {
     width: 300px;
@@ -142,13 +144,13 @@ label img {
 }
 
 .presentation__you h2 {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bolder;
-    margin-bottom: 1em;
-}
+    margin-bottom: 0.5em;}
 
 .presentation__you span {
     color: rgb(15, 107, 15);
+    font-weight: bolder;
 }
 
 .presentation__you p {
@@ -161,7 +163,7 @@ label img {
 /*SECTION DE TECNOLOGIAS*/
 
 .section-tecnologia {
-    background-color: #6e6c6c;
+    background-color: rgb(221, 218, 218);
     margin-bottom: 20px;
     /* Espacio debajo de la sección de tecnología */
 }
@@ -176,21 +178,15 @@ label img {
 
 .container__tecnologias {
     padding: 0;
-    /* Eliminar el relleno para evitar superposición con el padding de .tecnologias */
     background-color: #f0f0f0;
-    /* Cambiar el color de fondo para que coincida con el contenedor */
     display: flex;
     border-radius: 10px;
-    /* Bordes redondeados */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Agregar una sombra sutil */
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-
+    margin-top: 1%; /* Reducir el espacio superior */
+    margin-bottom: 1%; /* Reducir el espacio inferior */
 }
 
 .container__tecnologias img {
@@ -203,14 +199,14 @@ label img {
     /* Transición suave de 0.3 segundos */
 }
 
+.content {
+    padding: 20px;
+}
 .container__tecnologias img:hover {
     transform: scale(1.1);
     /* Escalar la imagen al 110% en el hover */
 }
 
-.content {
-    padding: 20px;
-}
 
 /*SLIDER SECTION*/
 .section-slider {
@@ -456,6 +452,7 @@ footer p {
 
     .presentation__you h2 {
         margin-left: 10%;
+        font-size: 2.5em;
     }
 
     .container__principal {
