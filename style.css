@@ -125,18 +125,18 @@ label img {
 .presentation__img {
     display: flex;
     margin-top: 2%;
-    margin-right: -2%;
     flex: 0 0 40%;
     /* Establece un ancho inicial del 40% */    
+    justify-content: center;
 }
 
 
 .presentation__img img {
-    width: 300px;
-    max-width: 300px;
-    max-height: 300px;
+    width: 200px;
+    max-width: 320px;
+    max-height: 320px;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .presentation__you {
@@ -190,8 +190,8 @@ label img {
     align-items: center;
     flex-wrap: wrap;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 1%; /* Reducir el espacio superior */
-    margin-bottom: 1%; /* Reducir el espacio inferior */
+    margin-top: 1%;
+    margin-bottom: 1%; 
 }
 
 .container__tecnologias img {
@@ -201,7 +201,10 @@ label img {
     /* Sombra con desplazamiento horizontal de 0, desplazamiento vertical de 4px y desenfoque de 8px */
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-    /* Transición suave de 0.3 segundos */
+}
+
+.content__aparte img{
+    object-fit: cover;
 }
 
 .content {
