@@ -27,18 +27,7 @@ function nextSlide() {
 
 showSlide(slideIndex);
 
-// JavaScript para manejar la apertura y cierre del menú desplegable
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-  console.log("Click en el icono del menú");
-  const menu = document.querySelector("header nav ul");
-  console.log("Menú:", menu);
-  menu.classList.toggle("menu-open");
-});
 
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-  const menu = document.querySelector("header nav ul");
-  menu.classList.toggle("menu-open");
-});
 
 //Cambia el menu por la x
 function menuX(){
